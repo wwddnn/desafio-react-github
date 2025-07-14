@@ -1,0 +1,13 @@
+
+header {
+    background-color: var(--color-bg-secondary);
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+.text-header {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--color-font-primary);
+}
