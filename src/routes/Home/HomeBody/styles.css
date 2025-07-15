@@ -1,0 +1,13 @@
+
+
+.text-title {
+    color: var(--color-font-tertiary);
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.text-description {
+    color: var(--color-font-secondary);
+    font-size: 24px;
+    font-weight: 700;
+}
