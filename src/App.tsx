@@ -3,6 +3,7 @@ import './App.css';
 import Home from './routes/Home';
 import HomeBody from './routes/Home/HomeBody';
 import Before from './routes/Home/Before';
+import NotFound from './components/NotFound';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />}>
         <Route index element={<HomeBody />}/>
         <Route path="before" element={<Before />}/>
+        <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
