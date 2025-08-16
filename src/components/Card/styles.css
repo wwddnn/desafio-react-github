@@ -1,14 +1,13 @@
 
 .card {
     background-color: var(--color-bg-tertiary);
-    margin-top: 54px;
-    margin-right: 99px;
-    height: 270px;
-    width: 1,251px;
-    border-radius: 16px;
     border: none;
-    padding: 54px 31px;
+    border-radius: 16px;
+    max-width: 1251px;
+    height: 270px;
+    padding: 54px 0 0 31px;
     display: flex;
+    margin: 54px 99px 0 90px;
     flex-direction: column;
 }
 

@@ -4,14 +4,16 @@
   --color-bg-primary: #fff;
   --color-bg-secondary: #1890ff;
   --color-bg-tertiary: #e6f7ff;
+  --color-bg-quartiary: #f5f5f5;
 
   --color-font-primary: #fff;
   --color-font-secondary: #7e7e7e;
   --color-font-tertiary: #000;
   --color-font-quartiary: #262626;
-  --color-font-placeholder: #BFBFBF;
+  --color-font-placeholder: #bfbfbf;
+  --color-font-text-after: #737373;
 
-  --color-input-border: #D9D9D9;
+  --color-input-border: #d9d9d9;
 }
 
 * {
@@ -21,23 +23,8 @@
   font-family: "Roboto";
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
   color: unset;
-}
-
-.container {
-  margin-left: 41px;
-}
-
-.mt27 {
-  margin-top: 27px;
-}
-
-.mb27 {
-  margin-bottom: 27px;
-}
-
-.mt54 {
-  margin-top: 54px;
 }
