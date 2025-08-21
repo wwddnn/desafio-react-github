@@ -16,3 +16,17 @@
   font-weight: 700;
   margin-bottom: 27px;
 }
+
+.button {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-font-primary);
+  border-radius: 4px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 101px;
+  border: none;
+}

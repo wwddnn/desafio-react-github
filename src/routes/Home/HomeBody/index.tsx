@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./styles.css";
-import Button from "../../../components/Button";
 
 export default function HomeBody() {
   return (
@@ -14,7 +13,7 @@ export default function HomeBody() {
             <p>DevSuperior - Escola de programação</p>
           </div>
           <Link to="/before" className="button-home">
-            <Button text="Começar" />
+            <button className="button">Começar</button>
           </Link>
         </div>
       </section>
