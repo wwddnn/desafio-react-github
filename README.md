@@ -1,69 +1,32 @@
-# React + TypeScript + Vite
+## 🎯SOBRE O PROJETO:
+- Desafio sobre API GITHUB da escola Devsuperior.
+- Objetivo é realizar a requisição a API do GITHUB e exibir os dados de: Foto, Perfil, Seguidores, Localidade e Nome.
+- Layout amigável com cores neutras e agradáveis de visualizar os dados.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✅CONHECIMENTOS:
+- React:
+- Components
+- Props
+- Router DOM
+- Rotas e Links
+- HOOKS (useState, useEffect) 
+- Requisição de API com Axios
 
-Currently, two official plugins are available:
+## ↗️TECNOLOGIAS: 
+- VSCODE IDE
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🤚DESENVOLVIDO POR:
+- Desafio e mentoria da escola Devsuperior
 
-## Expanding the ESLint configuration
+## Prints:
+ <img width="1916" height="851" alt="image" src="https://github.com/user-attachments/assets/764b2a17-c504-427b-9259-ae4fdba0e287" />
+ <img width="1905" height="850" alt="image" src="https://github.com/user-attachments/assets/3ad51fcb-e3ef-4d41-b77e-0af97685a50d" />
+ <img width="1616" height="897" alt="image" src="https://github.com/user-attachments/assets/26ac06dd-fe66-46ad-a3b8-c7e37331329f" />
+ <img width="1279" height="833" alt="image" src="https://github.com/user-attachments/assets/630ec43a-d14e-4bbf-901e-7bd843f76d7f" />
+ <img width="1585" height="931" alt="image" src="https://github.com/user-attachments/assets/a6640c4f-75e8-40b6-82ac-2b73c61389f9" />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
