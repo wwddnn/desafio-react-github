@@ -3,7 +3,7 @@ import "./styles.css";
 
 type Props = {
   user: UserDTO;
-}
+};
 
 export default function CardResult({ user }: Props) {
   return (
@@ -12,23 +12,25 @@ export default function CardResult({ user }: Props) {
         <div className="img-card-after">
           <img src={user.avatar_url} alt={user.name} />
         </div>
+
         <div className="text-card-after">
           <div>
             <h4>Informações</h4>
           </div>
-          <div>
-            <p>Perfil: {user.url} </p>
+          <div className="output-text">
+              Perfil: {user.url}
           </div>
-          <div>
-            <p>Seguidores: {user.followers} </p>
+          <div className="output-text">
+            Seguidores: {user.followers}
           </div>
-          <div>
-            <p>Localidade: {user.location} </p>
+          <div className="output-text">
+            Localidade: {user.location}
           </div>
-          <div>
-            <p>Nome: {user.name} </p>
+          <div className="output-text">
+            Nome: {user.name}
           </div>
         </div>
+
       </div>
     </>
   );

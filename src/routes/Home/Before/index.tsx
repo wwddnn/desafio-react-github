@@ -3,12 +3,16 @@ import type { UserDTO } from "../../../models/user";
 import CardResult from "../../../components/CardResult";
 import "./styles.css";
 import * as userService from "../../../services/user-service";
+import { Outlet, useNavigate } from "react-router-dom";
 
 type FormData = {
   login: string;
 };
 
 export default function Before() {
+
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState<FormData>({
     login: "",
   });
@@ -36,14 +40,14 @@ export default function Before() {
         })
         .catch((error) => {
           setUser(undefined);
-          console.log("Não encontrado");
+          navigate("*");
         });
     }
   }, [userLog]);
 
   return (
     <main>
-      <section>
+      <section id="before-section">
         <div className="card">
           <form onSubmit={handleFormSubmit}>
             <div className="text-card">
@@ -57,11 +61,12 @@ export default function Before() {
               onChange={handleInputChange}
             />
             <button className="button">Encontrar</button>
-          {user && 
-          <CardResult user={user} 
-          />}
           </form>
         </div>
+            {user &&
+            <CardResult user={user} />
+            }
+        <Outlet />
       </section>
     </main>
   );
